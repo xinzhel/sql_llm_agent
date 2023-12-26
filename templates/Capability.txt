@@ -1,0 +1,2 @@
+SELECT Name FROM Capability WHERE Name = '[Capability.Name]'
+SELECT CapabilityID, Name FROM Capability WHERE Name = '[Capability.Name]'

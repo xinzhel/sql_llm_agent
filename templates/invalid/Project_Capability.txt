@@ -1,0 +1,4 @@
+SELECT ProjectID FROM Project_Capability WHERE ProjectID = '[Project_Capability.ProjectID]'
+SELECT CapabilityID FROM Project_Capability WHERE CapabilityID = '[Project_Capability.CapabilityID]'
+SELECT ProjectID FROM Project_Capability WHERE CapabilityID = '[Project_Capability.CapabilityID]'
+SELECT CapabilityID FROM Project_Capability WHERE ProjectID = '[Project_Capability.ProjectID]'

@@ -1,0 +1,1 @@
+SELECT Company.Name, Project.Name FROM Company INNER JOIN Company_Project ON Company.CompanyID = Company_Project.CompanyID INNER JOIN Project ON Company_Project.ProjectID = Project.ProjectID WHERE Company.Name = [Company.Name];

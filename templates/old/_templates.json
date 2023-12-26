@@ -1,0 +1,9 @@
+{
+    "tables": "Capability, Company, Company_Project, Project, Project_Capability",
+    "schema": "CREATE TABLE `Capability` (`CapabilityID` VARCHAR(255) NOT NULL, `Name` VARCHAR(255), PRIMARY KEY (`CapabilityID`))COLLATE utf8mb4_0900_ai_ci ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 CREATE TABLE `Company_Project` (`ProjectID` VARCHAR(255), `CompanyID` VARCHAR(255), CONSTRAINT company_project_ibfk_1 FOREIGN KEY(`ProjectID`) REFERENCES `Project` (`ProjectID`), CONSTRAINT company_project_ibfk_2 FOREIGN KEY(`CompanyID`) REFERENCES `Company` (`CompanyID`))COLLATE utf8mb4_0900_ai_ci ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 CREATE TABLE `Company` (`CompanyID` VARCHAR(255) NOT NULL, `Name` VARCHAR(255), `Industry` VARCHAR(255), PRIMARY KEY (`CompanyID`))COLLATE utf8mb4_0900_ai_ci ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 CREATE TABLE `Project_Capability` (`ProjectID` VARCHAR(255), `CapabilityID` VARCHAR(255), CONSTRAINT project_capability_ibfk_1 FOREIGN KEY(`ProjectID`) REFERENCES `Project` (`ProjectID`), CONSTRAINT project_capability_ibfk_2 FOREIGN KEY(`CapabilityID`) REFERENCES `Capability` (`CapabilityID`))COLLATE utf8mb4_0900_ai_ci ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 CREATE TABLE `Project` (`ProjectID` VARCHAR(255) NOT NULL, `Name` VARCHAR(255), PRIMARY KEY (`ProjectID`))COLLATE utf8mb4_0900_ai_ci ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
+    "number_of_tables": 2,
+    "sql_template": "SELECT\r\n  Capability.Name as Capability, \r\n  Project.Name as ProjectName\r\nFROM\r\n  Capability \r\n  LEFT JOIN Project_Capability ON Capability.CapabilityID = Project_Capability.CapabilityID \r\n  LEFT JOIN Project ON Project.ProjectID = Project_Capability.ProjectID\r\nWHERE\r\n  Project.Name = [Project.Name];",
+    "placeholder": [
+        "[Project.Name]"
+    ]
+}

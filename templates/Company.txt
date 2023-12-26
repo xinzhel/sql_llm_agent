@@ -1,0 +1,6 @@
+SELECT Name FROM Company WHERE Name = '[Company.Name]';
+SELECT Industry FROM Company WHERE Name = '[Company.Name]';
+SELECT Name, Industry FROM Company WHERE Name = '[Company.Name]';
+SELECT Name FROM Company WHERE Industry = '[Company.Industry]';
+SELECT Industry FROM Company WHERE Industry = '[Company.Industry]';
+SELECT Name, Industry FROM Company WHERE Industry = '[Company.Industry]';

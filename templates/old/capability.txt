@@ -1,0 +1,41 @@
+SELECT CapabilityID FROM Capability WHERE Name = '[Capability.Name]'
+SELECT Name FROM Capability WHERE CapabilityID = '[Capability.CapabilityID]'
+SELECT CapabilityID, Name FROM Capability WHERE Name = '[Capability.Name]'
+SELECT Name FROM Capability WHERE Name LIKE '%[Capability.Name]%'
+SELECT CapabilityID, Name FROM Capability WHERE Name LIKE '[Capability.Name]%'
+SELECT CapabilityID FROM Capability WHERE Name IN ('[Capability.Name]')
+SELECT CapabilityID, Name FROM Capability WHERE Name BETWEEN '[Capability.Name]' AND '[Capability.Name]'
+SELECT Name FROM Capability WHERE CapabilityID IS NOT NULL AND Name = '[Capability.Name]'
+SELECT CapabilityID FROM Capability WHERE Name IS NULL OR Name = '[Capability.Name]'
+SELECT CapabilityID, Name FROM Capability WHERE Name <> '[Capability.Name]'
+SELECT Name FROM Capability WHERE Name > '[Capability.Name]'
+SELECT CapabilityID, Name FROM Capability WHERE Name < '[Capability.Name]'
+SELECT Name FROM Capability WHERE CapabilityID = '[Capability.CapabilityID]' AND Name = '[Capability.Name]'
+SELECT CapabilityID, Name FROM Capability WHERE Name LIKE '%[Capability.Name]%' OR Name = '[Capability.Name]'
+SELECT CapabilityID FROM Capability WHERE Name NOT LIKE '%[Capability.Name]%' AND Name = '[Capability.Name]'
+
+
+
+SELECT Name FROM Capability WHERE Name = [Capability.Name]
+SELECT CapabilityID, Name FROM Capability WHERE Name LIKE [Capability.Name]
+SELECT CapabilityID FROM Capability WHERE Name IS NOT NULL AND Name = [Capability.Name]
+SELECT Name FROM Capability WHERE Name IS NULL OR Name = [Capability.Name]
+SELECT Count(CapabilityID) FROM Capability WHERE Name = [Capability.Name]
+SELECT Name FROM Capability WHERE Name NOT LIKE [Capability.Name]
+SELECT CapabilityID, Name FROM Capability WHERE Name IN ([Capability.Name])
+SELECT Name FROM Capability WHERE CapabilityID = [Capability.CapabilityID]
+SELECT Count(*) FROM Capability WHERE Name LIKE [Capability.Name]
+SELECT Max(CapabilityID) FROM Capability WHERE Name = [Capability.Name]
+SELECT Min(CapabilityID) FROM Capability WHERE Name = [Capability.Name]
+SELECT Avg(CapabilityID) FROM Capability WHERE Name = [Capability.Name]
+SELECT Sum(CapabilityID) FROM Capability WHERE Name = [Capability.Name]
+
+
+SELECT CapabilityID FROM Capability WHERE Name = [Capability.Name]
+SELECT Name FROM Capability WHERE CapabilityID = [Capability.CapabilityID]
+SELECT Name, CapabilityID FROM Capability WHERE Name = [Capability.Name]
+SELECT CapabilityID, Name FROM Capability WHERE Name = [Capability.Name]
+
+
+SELECT Name FROM Capability WHERE Name = '[Capability.Name]'
+SELECT CapabilityID, Name FROM Capability WHERE Name = '[Capability.Name]'

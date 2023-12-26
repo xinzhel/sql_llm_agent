@@ -1,0 +1,27 @@
+Here are ten SQL template examples for the given schema:
+
+```SQL
+1. SELECT Name FROM Company WHERE CompanyID = [Company.CompanyID];
+2. SELECT Name, Location FROM Employee WHERE EmployeeID = [Employee.EmployeeID];
+3. SELECT Name, Status FROM Project WHERE ProjectID = [Project.ProjectID];
+4. SELECT Name FROM Capability WHERE CapabilityID = [Capability.CapabilityID];
+5. SELECT Role FROM Project_Employee WHERE EmployeeID = [Project_Employee.EmployeeID] AND ProjectID = [Project_Employee.ProjectID];
+6. SELECT COUNT(EmployeeID) FROM Employee WHERE Location = [Employee.Location];
+7. SELECT DISTINCT(Name) FROM Employee WHERE JobTitle = [Employee.JobTitle];
+8. SELECT CompanyID, COUNT(ProjectID) FROM Company_Project WHERE CompanyID = [Company_Project.CompanyID] GROUP BY CompanyID;
+9. SELECT ProjectID, COUNT(CapabilityID) FROM Project_Capability WHERE ProjectID = [Project_Capability.ProjectID] GROUP BY ProjectID;
+10. SELECT EmployeeID, COUNT(ProjectID) FROM Project_Employee WHERE EmployeeID = [Project_Employee.EmployeeID] GROUP BY EmployeeID;
+```
+
+And these are equivalent placeholders for each SQL template:
+
+1. ["[Company.CompanyID]"]
+2. ["[Employee.EmployeeID]"]
+3. ["[Project.ProjectID]"]
+4. ["[Capability.CapabilityID]"]
+5. ["[Project_Employee.EmployeeID]", "[Project_Employee.ProjectID]"]
+6. ["[Employee.Location]"]
+7. ["[Employee.JobTitle]"]
+8. ["[Company_Project.CompanyID]"]
+9. ["[Project_Capability.ProjectID]"]
+10. ["[Project_Employee.EmployeeID]"]

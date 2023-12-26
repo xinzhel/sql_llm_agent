@@ -1,0 +1,8 @@
+SELECT ProjectID, EmployeeID FROM Project_Employee WHERE Role = '[Project_Employee.Role]'
+SELECT Role FROM Project_Employee WHERE ProjectID = '[Project_Employee.ProjectID]'
+SELECT Role FROM Project_Employee WHERE EmployeeID = '[Project_Employee.EmployeeID]'
+SELECT ProjectID FROM Project_Employee WHERE Role = '[Project_Employee.Role]'
+SELECT EmployeeID FROM Project_Employee WHERE Role = '[Project_Employee.Role]'
+SELECT ProjectID, Role FROM Project_Employee WHERE EmployeeID = '[Project_Employee.EmployeeID]'
+SELECT EmployeeID, Role FROM Project_Employee WHERE ProjectID = '[Project_Employee.ProjectID]'
+    ##RESPONSE_END##

@@ -1,0 +1,6 @@
+SELECT ProjectID FROM Company_Project WHERE ProjectID = '[Company_Project.ProjectID]'
+SELECT CompanyID FROM Company_Project WHERE CompanyID = '[Company_Project.CompanyID]'
+SELECT ProjectID, CompanyID FROM Company_Project WHERE ProjectID = '[Company_Project.ProjectID]' AND CompanyID = '[Company_Project.CompanyID]'
+SELECT ProjectID FROM Company_Project WHERE CompanyID = '[Company_Project.CompanyID]'
+SELECT CompanyID FROM Company_Project WHERE ProjectID = '[Company_Project.ProjectID]'
+    ##RESPONSE_END##

@@ -1,0 +1,7 @@
+SELECT Name, Location, Status FROM Project WHERE Name = '[Project.Name]'
+SELECT Name, StartDate, EndDate FROM Project WHERE StartDate >= '[Project.StartDate]'
+SELECT Name, Asset FROM Project WHERE Asset = '[Project.Asset]'
+SELECT Location, Status, StartDate, EndDate FROM Project WHERE Location = '[Project.Location]'
+SELECT Name, Location FROM Project WHERE Status = '[Project.Status]'
+SELECT Name, Status FROM Project WHERE StartDate = '[Project.StartDate]' AND EndDate <= '[Project.EndDate]'
+SELECT Name, Asset FROM Project WHERE Asset = '[Project.Asset]' AND Location = '[Project.Location]'
