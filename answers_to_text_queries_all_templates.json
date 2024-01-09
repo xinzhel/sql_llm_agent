@@ -1,0 +1,757 @@
+{
+    "Project": [
+        [
+            [
+                "[('Carlton Innovation Precinct', 'Melbourne, Victoria', 'inactive')]",
+                [
+                    "1. This action seeks to find the name, location, and status of a project that has the exact same name as the one specified, which is \"Carlton Innovation Precinct\".",
+                    "2. This instruction is set to search for the details including the name, location, and current status of a specific project named \"Carlton Innovation Precinct\".",
+                    "3. In simpler terms, the intent is to obtain the name, where it's located, and its current status of any project that goes by the name \"Carlton Innovation Precinct\"."
+                ]
+            ],
+            [
+                "[('25 King Street', 'Queensland', 'Active')]",
+                [
+                    "1. This action seeks to find the name, location, and status of a project that has the exact same name as the one specified, which is \"25 King Street\".",
+                    "2. This instruction is set to search for the details including the name, location, and current status of a specific project named \"25 King Street\".",
+                    "3. In simpler terms, the intent is to obtain the name, where it's located, and its current status of any project that goes by the name \"25 King Street\"."
+                ]
+            ],
+            [
+                "[('5 Martin Place', 'Sydney', 'Active')]",
+                [
+                    "1. This action seeks to find the name, location, and status of a project that has the exact same name as the one specified, which is \"5 Martin Place\".",
+                    "2. This instruction is set to search for the details including the name, location, and current status of a specific project named \"5 Martin Place\".",
+                    "3. In simpler terms, the intent is to obtain the name, where it's located, and its current status of any project that goes by the name \"5 Martin Place\"."
+                ]
+            ],
+            [
+                "[('Australian Embassy Washington', 'Washington', 'Inactive')]",
+                [
+                    "1. This action seeks to find the name, location, and status of a project that has the exact same name as the one specified, which is \"Australian Embassy Washington\".",
+                    "2. This instruction is set to search for the details including the name, location, and current status of a specific project named \"Australian Embassy Washington\".",
+                    "3. In simpler terms, the intent is to obtain the name, where it's located, and its current status of any project that goes by the name \"Australian Embassy Washington\"."
+                ]
+            ]
+        ],
+        [
+            [
+                "[('Carlton Innovation Precinct', datetime.date(2018, 1, 3), datetime.date(2019, 8, 16))]",
+                [
+                    "1. Retrieve the name, the starting date, and the ending date of the projects that began on or after a specific date, denoted as '2018-01-03'.",
+                    "2. Look up for names along with their corresponding start and end dates from the list of projects where the date of commencement is the same as or later than '2018-01-03'.",
+                    "3. Provide the names, the beginning date, and the completion date for the projects whose start dates are either equivalent to or later than the date marked under '2018-01-03'."
+                ]
+            ],
+            [
+                "[('Carlton Innovation Precinct', datetime.date(2018, 1, 3), datetime.date(2019, 8, 16)), ('25 King Street', datetime.date(2016, 6, 27), datetime.date(2020, 4, 21)), ('Australian Embassy Washington', datetime.date(2016, 11, 17), datetime.date(2019, 1, 12))]",
+                [
+                    "1. Retrieve the name, the starting date, and the ending date of the projects that began on or after a specific date, denoted as '2016-06-27'.",
+                    "2. Look up for names along with their corresponding start and end dates from the list of projects where the date of commencement is the same as or later than '2016-06-27'.",
+                    "3. Provide the names, the beginning date, and the completion date for the projects whose start dates are either equivalent to or later than the date marked under '2016-06-27'."
+                ]
+            ],
+            [
+                "[('Carlton Innovation Precinct', datetime.date(2018, 1, 3), datetime.date(2019, 8, 16)), ('25 King Street', datetime.date(2016, 6, 27), datetime.date(2020, 4, 21)), ('5 Martin Place', datetime.date(2012, 1, 7), datetime.date(2017, 10, 5)), ('Australian Embassy Washington', datetime.date(2016, 11, 17), datetime.date(2019, 1, 12))]",
+                [
+                    "1. Retrieve the name, the starting date, and the ending date of the projects that began on or after a specific date, denoted as '2012-01-07'.",
+                    "2. Look up for names along with their corresponding start and end dates from the list of projects where the date of commencement is the same as or later than '2012-01-07'.",
+                    "3. Provide the names, the beginning date, and the completion date for the projects whose start dates are either equivalent to or later than the date marked under '2012-01-07'."
+                ]
+            ],
+            [
+                "[('Carlton Innovation Precinct', datetime.date(2018, 1, 3), datetime.date(2019, 8, 16)), ('Australian Embassy Washington', datetime.date(2016, 11, 17), datetime.date(2019, 1, 12))]",
+                [
+                    "1. Retrieve the name, the starting date, and the ending date of the projects that began on or after a specific date, denoted as '2016-11-17'.",
+                    "2. Look up for names along with their corresponding start and end dates from the list of projects where the date of commencement is the same as or later than '2016-11-17'.",
+                    "3. Provide the names, the beginning date, and the completion date for the projects whose start dates are either equivalent to or later than the date marked under '2016-11-17'."
+                ]
+            ]
+        ],
+        [
+            [
+                "[('Carlton Innovation Precinct', 'Museums')]",
+                []
+            ],
+            [
+                "[('25 King Street', 'Commercial Offices')]",
+                []
+            ],
+            [
+                "[('Australian Embassy Washington', 'Government Offices')]",
+                []
+            ]
+        ],
+        [
+            [
+                "[('Melbourne, Victoria', 'inactive', datetime.date(2018, 1, 3), datetime.date(2019, 8, 16))]",
+                [
+                    "1. \"Please display the location, status, start date, and end date of the project which corresponds to the specific place identified as 'Melbourne, Victoria'.\"",
+                    "2. \"Can you show me the information about the location, status, start date, and end date for the project based at the location known as 'Melbourne, Victoria'?\"",
+                    "3. \"I'm interested in identifying the location, status, start date, and end date for the project that's located at the site referred to as 'Melbourne, Victoria'.\""
+                ]
+            ],
+            [
+                "[('Queensland', 'Active', datetime.date(2016, 6, 27), datetime.date(2020, 4, 21))]",
+                [
+                    "1. \"Please display the location, status, start date, and end date of the project which corresponds to the specific place identified as 'Queensland'.\"",
+                    "2. \"Can you show me the information about the location, status, start date, and end date for the project based at the location known as 'Queensland'?\"",
+                    "3. \"I'm interested in identifying the location, status, start date, and end date for the project that's located at the site referred to as 'Queensland'.\""
+                ]
+            ],
+            [
+                "[('Sydney', 'Active', datetime.date(2012, 1, 7), datetime.date(2017, 10, 5))]",
+                [
+                    "1. \"Please display the location, status, start date, and end date of the project which corresponds to the specific place identified as 'Sydney'.\"",
+                    "2. \"Can you show me the information about the location, status, start date, and end date for the project based at the location known as 'Sydney'?\"",
+                    "3. \"I'm interested in identifying the location, status, start date, and end date for the project that's located at the site referred to as 'Sydney'.\""
+                ]
+            ],
+            [
+                "[('Washington', 'Inactive', datetime.date(2016, 11, 17), datetime.date(2019, 1, 12))]",
+                [
+                    "1. \"Please display the location, status, start date, and end date of the project which corresponds to the specific place identified as 'Washington'.\"",
+                    "2. \"Can you show me the information about the location, status, start date, and end date for the project based at the location known as 'Washington'?\"",
+                    "3. \"I'm interested in identifying the location, status, start date, and end date for the project that's located at the site referred to as 'Washington'.\""
+                ]
+            ]
+        ],
+        [
+            [
+                "[('Carlton Innovation Precinct', 'Melbourne, Victoria'), ('Australian Embassy Washington', 'Washington')]",
+                [
+                    "1. We are looking for the name and location of projects where the status matches the particular status specified in 'inactive'.",
+                    "2. Display the name and location of the projects that have a status identical to the one referred to as 'inactive'.",
+                    "3. Show me the name and location of any project where the status is the same as that described in 'inactive'."
+                ]
+            ],
+            [
+                "[('25 King Street', 'Queensland'), ('5 Martin Place', 'Sydney')]",
+                [
+                    "1. We are looking for the name and location of projects where the status matches the particular status specified in 'Active'.",
+                    "2. Display the name and location of the projects that have a status identical to the one referred to as 'Active'.",
+                    "3. Show me the name and location of any project where the status is the same as that described in 'Active'."
+                ]
+            ]
+        ],
+        [
+            [
+                "[('Carlton Innovation Precinct', 'inactive')]",
+                []
+            ],
+            [
+                "[('Carlton Innovation Precinct', 'inactive')]",
+                []
+            ],
+            [
+                "",
+                []
+            ],
+            [
+                "",
+                []
+            ],
+            [
+                "",
+                []
+            ],
+            [
+                "[('25 King Street', 'Active')]",
+                []
+            ],
+            [
+                "",
+                []
+            ],
+            [
+                "",
+                []
+            ],
+            [
+                "[('5 Martin Place', 'Active')]",
+                []
+            ],
+            [
+                "[('5 Martin Place', 'Active')]",
+                []
+            ],
+            [
+                "[('5 Martin Place', 'Active')]",
+                []
+            ],
+            [
+                "[('5 Martin Place', 'Active')]",
+                []
+            ],
+            [
+                "[('Australian Embassy Washington', 'Inactive')]",
+                []
+            ],
+            [
+                "[('Australian Embassy Washington', 'Inactive')]",
+                []
+            ],
+            [
+                "",
+                []
+            ],
+            [
+                "[('Australian Embassy Washington', 'Inactive')]",
+                []
+            ]
+        ],
+        [
+            [
+                "[('Carlton Innovation Precinct', 'Museums')]",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Museums' and is located at a place equivalent to 'Melbourne, Victoria'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Museums' and its location is the same as 'Melbourne, Victoria'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Museums' and the location is 'Melbourne, Victoria'."
+                ]
+            ],
+            [
+                "",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Museums' and is located at a place equivalent to 'Queensland'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Museums' and its location is the same as 'Queensland'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Museums' and the location is 'Queensland'."
+                ]
+            ],
+            [
+                "",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Museums' and is located at a place equivalent to 'Sydney'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Museums' and its location is the same as 'Sydney'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Museums' and the location is 'Sydney'."
+                ]
+            ],
+            [
+                "",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Museums' and is located at a place equivalent to 'Washington'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Museums' and its location is the same as 'Washington'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Museums' and the location is 'Washington'."
+                ]
+            ],
+            [
+                "",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Commercial Offices' and is located at a place equivalent to 'Melbourne, Victoria'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Commercial Offices' and its location is the same as 'Melbourne, Victoria'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Commercial Offices' and the location is 'Melbourne, Victoria'."
+                ]
+            ],
+            [
+                "[('25 King Street', 'Commercial Offices')]",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Commercial Offices' and is located at a place equivalent to 'Queensland'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Commercial Offices' and its location is the same as 'Queensland'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Commercial Offices' and the location is 'Queensland'."
+                ]
+            ],
+            [
+                "",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Commercial Offices' and is located at a place equivalent to 'Sydney'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Commercial Offices' and its location is the same as 'Sydney'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Commercial Offices' and the location is 'Sydney'."
+                ]
+            ],
+            [
+                "",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Commercial Offices' and is located at a place equivalent to 'Washington'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Commercial Offices' and its location is the same as 'Washington'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Commercial Offices' and the location is 'Washington'."
+                ]
+            ],
+            [
+                "",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Government Offices' and is located at a place equivalent to 'Melbourne, Victoria'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Government Offices' and its location is the same as 'Melbourne, Victoria'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Government Offices' and the location is 'Melbourne, Victoria'."
+                ]
+            ],
+            [
+                "",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Government Offices' and is located at a place equivalent to 'Queensland'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Government Offices' and its location is the same as 'Queensland'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Government Offices' and the location is 'Queensland'."
+                ]
+            ],
+            [
+                "",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Government Offices' and is located at a place equivalent to 'Sydney'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Government Offices' and its location is the same as 'Sydney'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Government Offices' and the location is 'Sydney'."
+                ]
+            ],
+            [
+                "[('Australian Embassy Washington', 'Government Offices')]",
+                [
+                    "1. We are trying to fetch the name and asset from a specific project, which has a certain asset value that matches 'Government Offices' and is located at a place equivalent to 'Washington'.",
+                    "2. This is a request to obtain the name and the asset of a project, given that the project's asset equals 'Government Offices' and its location is the same as 'Washington'.",
+                    "3. The objective is to find out the name and asset from a particular project, but only for the cases where the asset is 'Government Offices' and the location is 'Washington'."
+                ]
+            ]
+        ]
+    ],
+    "Capability": [
+        [
+            [
+                "[('Digital',)]",
+                []
+            ],
+            [
+                "[('Engagement & Change Advisory',)]",
+                []
+            ],
+            [
+                "[('Buildings Electrical',)]",
+                []
+            ],
+            [
+                "[('Buildings Mechanical',)]",
+                []
+            ],
+            [
+                "[('Buildings Structures Ground',)]",
+                []
+            ],
+            [
+                "[('Underground Engineering',)]",
+                []
+            ]
+        ],
+        [
+            [
+                "[('C1', 'Digital')]",
+                [
+                    "1. Can you provide me with the identifiers and names of abilities that exactly match the specific ability named 'Digital'?",
+                    "2. I am inquiring for the identifiers and names of capabilities that have the specific name 'Digital'.",
+                    "3. Could you please fetch the identification numbers and names of abilities which share the exact same name as 'Digital'?"
+                ]
+            ],
+            [
+                "[('C2', 'Engagement & Change Advisory')]",
+                [
+                    "1. Can you provide me with the identifiers and names of abilities that exactly match the specific ability named 'Engagement & Change Advisory'?",
+                    "2. I am inquiring for the identifiers and names of capabilities that have the specific name 'Engagement & Change Advisory'.",
+                    "3. Could you please fetch the identification numbers and names of abilities which share the exact same name as 'Engagement & Change Advisory'?"
+                ]
+            ],
+            [
+                "[('C3', 'Buildings Electrical')]",
+                [
+                    "1. Can you provide me with the identifiers and names of abilities that exactly match the specific ability named 'Buildings Electrical'?",
+                    "2. I am inquiring for the identifiers and names of capabilities that have the specific name 'Buildings Electrical'.",
+                    "3. Could you please fetch the identification numbers and names of abilities which share the exact same name as 'Buildings Electrical'?"
+                ]
+            ],
+            [
+                "[('C4', 'Buildings Mechanical')]",
+                [
+                    "1. Can you provide me with the identifiers and names of abilities that exactly match the specific ability named 'Buildings Mechanical'?",
+                    "2. I am inquiring for the identifiers and names of capabilities that have the specific name 'Buildings Mechanical'.",
+                    "3. Could you please fetch the identification numbers and names of abilities which share the exact same name as 'Buildings Mechanical'?"
+                ]
+            ],
+            [
+                "[('C5', 'Buildings Structures Ground')]",
+                [
+                    "1. Can you provide me with the identifiers and names of abilities that exactly match the specific ability named 'Buildings Structures Ground'?",
+                    "2. I am inquiring for the identifiers and names of capabilities that have the specific name 'Buildings Structures Ground'.",
+                    "3. Could you please fetch the identification numbers and names of abilities which share the exact same name as 'Buildings Structures Ground'?"
+                ]
+            ],
+            [
+                "[('C6', 'Underground Engineering')]",
+                [
+                    "1. Can you provide me with the identifiers and names of abilities that exactly match the specific ability named 'Underground Engineering'?",
+                    "2. I am inquiring for the identifiers and names of capabilities that have the specific name 'Underground Engineering'.",
+                    "3. Could you please fetch the identification numbers and names of abilities which share the exact same name as 'Underground Engineering'?"
+                ]
+            ]
+        ]
+    ],
+    "Employee": [
+        [
+            [
+                "[('Matt Magraith',)]",
+                [
+                    "1. \"Please fetch the name from the Employee records where the name is the same as 'Matt Magraith'.\"",
+                    "2. \"Could you please find and tell me the name which matches with 'Matt Magraith' from our employee data?\"",
+                    "3. \"I'm looking to obtain the name in the Employee database that precisely matches 'Matt Magraith'.\""
+                ]
+            ],
+            [
+                "[('Tony Lavorato',)]",
+                [
+                    "1. \"Please fetch the name from the Employee records where the name is the same as 'Tony Lavorato'.\"",
+                    "2. \"Could you please find and tell me the name which matches with 'Tony Lavorato' from our employee data?\"",
+                    "3. \"I'm looking to obtain the name in the Employee database that precisely matches 'Tony Lavorato'.\""
+                ]
+            ],
+            [
+                "[('Joseph Presti',)]",
+                [
+                    "1. \"Please fetch the name from the Employee records where the name is the same as 'Joseph Presti'.\"",
+                    "2. \"Could you please find and tell me the name which matches with 'Joseph Presti' from our employee data?\"",
+                    "3. \"I'm looking to obtain the name in the Employee database that precisely matches 'Joseph Presti'.\""
+                ]
+            ]
+        ],
+        [
+            [
+                "[('Matt Magraith', 'Operations Director, New South Wales and Australian Capital Territory')]",
+                []
+            ],
+            [
+                "[('Tony Lavorato', 'Design Director')]",
+                []
+            ],
+            [
+                "[('Joseph Presti', 'Industry Leader, Property and Place \u2013 Australia')]",
+                []
+            ]
+        ],
+        [
+            [
+                "[('Matt Magraith', 'Sydney'), ('Tony Lavorato', 'Sydney')]",
+                []
+            ],
+            [
+                "[('Joseph Presti', 'Melbourne')]",
+                []
+            ]
+        ],
+        [
+            [
+                "[('Matt Magraith', 'NSW & ACT Operations')]",
+                [
+                    "1. We are looking for the names and departments of employees who are working in the department identified as 'NSW & ACT Operations'.",
+                    "2. The information we're seeking includes the name and department of employees, but specifically for those who belong to the department named 'NSW & ACT Operations'.",
+                    "3. What we need are the names and departments of employees, however, we're only interested in those from the 'NSW & ACT Operations' department."
+                ]
+            ],
+            [
+                "[('Tony Lavorato', 'NSW & ACT Buildings')]",
+                [
+                    "1. We are looking for the names and departments of employees who are working in the department identified as 'NSW & ACT Buildings'.",
+                    "2. The information we're seeking includes the name and department of employees, but specifically for those who belong to the department named 'NSW & ACT Buildings'.",
+                    "3. What we need are the names and departments of employees, however, we're only interested in those from the 'NSW & ACT Buildings' department."
+                ]
+            ],
+            [
+                "[('Joseph Presti', 'SAVI Operations')]",
+                [
+                    "1. We are looking for the names and departments of employees who are working in the department identified as 'SAVI Operations'.",
+                    "2. The information we're seeking includes the name and department of employees, but specifically for those who belong to the department named 'SAVI Operations'.",
+                    "3. What we need are the names and departments of employees, however, we're only interested in those from the 'SAVI Operations' department."
+                ]
+            ]
+        ],
+        [
+            [
+                "[('Matt Magraith', 'North Sydney'), ('Tony Lavorato', 'North Sydney')]",
+                [
+                    "1. \"Please provide the name and business address for the employee whose business address matches the given location 'North Sydney'.\"",
+                    "2. \"Can you give me the name and business address of an employee that works at the following address: 'North Sydney'?\"",
+                    "3. \"Let's find out the name and business address of the employee who is situated at 'North Sydney'.\""
+                ]
+            ],
+            [
+                "[('Joseph Presti', 'Melbourne VIC')]",
+                [
+                    "1. \"Please provide the name and business address for the employee whose business address matches the given location 'Melbourne VIC'.\"",
+                    "2. \"Can you give me the name and business address of an employee that works at the following address: 'Melbourne VIC'?\"",
+                    "3. \"Let's find out the name and business address of the employee who is situated at 'Melbourne VIC'.\""
+                ]
+            ]
+        ],
+        [
+            [
+                "[('Operations Director, New South Wales and Australian Capital Territory', 'Sydney')]",
+                [
+                    "1. Please display the job title and location for the employee named 'Matt Magraith'.",
+                    "2. Can you show me the position and the place of work for the individual whose name is 'Matt Magraith' in our employee records?",
+                    "3. Could you provide the professional title and the site of employment for the worker who is identified by the name 'Matt Magraith'?"
+                ]
+            ],
+            [
+                "[('Design Director', 'Sydney')]",
+                [
+                    "1. Please display the job title and location for the employee named 'Tony Lavorato'.",
+                    "2. Can you show me the position and the place of work for the individual whose name is 'Tony Lavorato' in our employee records?",
+                    "3. Could you provide the professional title and the site of employment for the worker who is identified by the name 'Tony Lavorato'?"
+                ]
+            ],
+            [
+                "[('Industry Leader, Property and Place \u2013 Australia', 'Melbourne')]",
+                [
+                    "1. Please display the job title and location for the employee named 'Joseph Presti'.",
+                    "2. Can you show me the position and the place of work for the individual whose name is 'Joseph Presti' in our employee records?",
+                    "3. Could you provide the professional title and the site of employment for the worker who is identified by the name 'Joseph Presti'?"
+                ]
+            ]
+        ],
+        [
+            [
+                "[('NSW & ACT Operations', 'Sydney')]",
+                [
+                    "1. We need to find the department and location of the employee whose name matches 'Matt Magraith'. ",
+                    "2. Could you look up for the department and location related information for the employee identified as 'Matt Magraith'?",
+                    "3. Can you provide the information on which department and location the employee with the name 'Matt Magraith' is affiliated with?"
+                ]
+            ],
+            [
+                "[('NSW & ACT Buildings', 'Sydney')]",
+                [
+                    "1. We need to find the department and location of the employee whose name matches 'Tony Lavorato'. ",
+                    "2. Could you look up for the department and location related information for the employee identified as 'Tony Lavorato'?",
+                    "3. Can you provide the information on which department and location the employee with the name 'Tony Lavorato' is affiliated with?"
+                ]
+            ],
+            [
+                "[('SAVI Operations', 'Melbourne')]",
+                [
+                    "1. We need to find the department and location of the employee whose name matches 'Joseph Presti'. ",
+                    "2. Could you look up for the department and location related information for the employee identified as 'Joseph Presti'?",
+                    "3. Can you provide the information on which department and location the employee with the name 'Joseph Presti' is affiliated with?"
+                ]
+            ]
+        ],
+        [
+            [
+                "[('North Sydney', 'Sydney')]",
+                [
+                    "1. The query is seeking to find the business address and the location of the employee who has the same name as the one appearing in the 'Matt Magraith' placeholder.",
+                    "2. This is a search for the business address and the location of an employee, specifically the one who's name matches the name indicated in 'Matt Magraith'.",
+                    "3. What this is after is the business address and location details of an employee, but not just any employee - the one whose name corresponds to the name given in 'Matt Magraith'."
+                ]
+            ],
+            [
+                "[('North Sydney', 'Sydney')]",
+                [
+                    "1. The query is seeking to find the business address and the location of the employee who has the same name as the one appearing in the 'Tony Lavorato' placeholder.",
+                    "2. This is a search for the business address and the location of an employee, specifically the one who's name matches the name indicated in 'Tony Lavorato'.",
+                    "3. What this is after is the business address and location details of an employee, but not just any employee - the one whose name corresponds to the name given in 'Tony Lavorato'."
+                ]
+            ],
+            [
+                "[('Melbourne VIC', 'Melbourne')]",
+                [
+                    "1. The query is seeking to find the business address and the location of the employee who has the same name as the one appearing in the 'Joseph Presti' placeholder.",
+                    "2. This is a search for the business address and the location of an employee, specifically the one who's name matches the name indicated in 'Joseph Presti'.",
+                    "3. What this is after is the business address and location details of an employee, but not just any employee - the one whose name corresponds to the name given in 'Joseph Presti'."
+                ]
+            ]
+        ],
+        [
+            [
+                "[('Matt Magraith', 'Operations Director, New South Wales and Australian Capital Territory', 'Sydney')]",
+                [
+                    "1. \"May you provide the name, the job title, and the location of all the employees who are working in the department labeled as 'NSW & ACT Operations'?\"",
+                    "2. \"Can you fetch details such as name, job title, and location for those employees that are associated with the department designated as 'NSW & ACT Operations'?\"",
+                    "3. \"Looking for the list of employees' names, their job titles, and their location, who are all part of the department called 'NSW & ACT Operations'.\""
+                ]
+            ],
+            [
+                "[('Tony Lavorato', 'Design Director', 'Sydney')]",
+                [
+                    "1. \"May you provide the name, the job title, and the location of all the employees who are working in the department labeled as 'NSW & ACT Buildings'?\"",
+                    "2. \"Can you fetch details such as name, job title, and location for those employees that are associated with the department designated as 'NSW & ACT Buildings'?\"",
+                    "3. \"Looking for the list of employees' names, their job titles, and their location, who are all part of the department called 'NSW & ACT Buildings'.\""
+                ]
+            ],
+            [
+                "[('Joseph Presti', 'Industry Leader, Property and Place \u2013 Australia', 'Melbourne')]",
+                [
+                    "1. \"May you provide the name, the job title, and the location of all the employees who are working in the department labeled as 'SAVI Operations'?\"",
+                    "2. \"Can you fetch details such as name, job title, and location for those employees that are associated with the department designated as 'SAVI Operations'?\"",
+                    "3. \"Looking for the list of employees' names, their job titles, and their location, who are all part of the department called 'SAVI Operations'.\""
+                ]
+            ]
+        ],
+        [
+            [
+                "[('Matt Magraith', 'Operations Director, New South Wales and Australian Capital Territory', 'NSW & ACT Operations'), ('Tony Lavorato', 'Design Director', 'NSW & ACT Buildings')]",
+                [
+                    "1. We are interested in finding the name, job title, and department for employees at the location specified as 'Sydney'.",
+                    "2. This lookup asks for the name, job title, and department information of each employee who is based in 'Sydney'.",
+                    "3. The aim is to retrieve the names, job titles, and department affiliations of all the employees working at 'Sydney'."
+                ]
+            ],
+            [
+                "[('Joseph Presti', 'Industry Leader, Property and Place \u2013 Australia', 'SAVI Operations')]",
+                [
+                    "1. We are interested in finding the name, job title, and department for employees at the location specified as 'Melbourne'.",
+                    "2. This lookup asks for the name, job title, and department information of each employee who is based in 'Melbourne'.",
+                    "3. The aim is to retrieve the names, job titles, and department affiliations of all the employees working at 'Melbourne'."
+                ]
+            ]
+        ],
+        [
+            [
+                "[('Matt Magraith', 'NSW & ACT Operations', 'North Sydney')]",
+                [
+                    "1. Please display the name, department, and business address for any employee whose job title matches the specified job title in 'Operations Director, New South Wales and Australian Capital Territory'.",
+                    "2. Kindly list out the name, department, and the business address of each employee who holds the position titled 'Operations Director, New South Wales and Australian Capital Territory'.",
+                    "3. Could you show me the names, departments, and business addresses of our employees who have the job title of 'Operations Director, New South Wales and Australian Capital Territory'?"
+                ]
+            ],
+            [
+                "[('Tony Lavorato', 'NSW & ACT Buildings', 'North Sydney')]",
+                [
+                    "1. Please display the name, department, and business address for any employee whose job title matches the specified job title in 'Design Director'.",
+                    "2. Kindly list out the name, department, and the business address of each employee who holds the position titled 'Design Director'.",
+                    "3. Could you show me the names, departments, and business addresses of our employees who have the job title of 'Design Director'?"
+                ]
+            ],
+            [
+                "[('Joseph Presti', 'SAVI Operations', 'Melbourne VIC')]",
+                [
+                    "1. Please display the name, department, and business address for any employee whose job title matches the specified job title in 'Industry Leader, Property and Place \u2013 Australia'.",
+                    "2. Kindly list out the name, department, and the business address of each employee who holds the position titled 'Industry Leader, Property and Place \u2013 Australia'.",
+                    "3. Could you show me the names, departments, and business addresses of our employees who have the job title of 'Industry Leader, Property and Place \u2013 Australia'?"
+                ]
+            ]
+        ],
+        [
+            [
+                "[('Matt Magraith', 'Operations Director, New South Wales and Australian Capital Territory', 'North Sydney')]",
+                [
+                    "1. The query is looking for the name, job title, and business address of employees in the specific department denoted as 'NSW & ACT Operations'.",
+                    "2. We're retrieving the name, job title, and business address of employees who belong to the department specified as 'NSW & ACT Operations'.",
+                    "3. This is a query to fetch the names, job titles, and business addresses of employees working in the department labeled 'NSW & ACT Operations'."
+                ]
+            ],
+            [
+                "[('Tony Lavorato', 'Design Director', 'North Sydney')]",
+                [
+                    "1. The query is looking for the name, job title, and business address of employees in the specific department denoted as 'NSW & ACT Buildings'.",
+                    "2. We're retrieving the name, job title, and business address of employees who belong to the department specified as 'NSW & ACT Buildings'.",
+                    "3. This is a query to fetch the names, job titles, and business addresses of employees working in the department labeled 'NSW & ACT Buildings'."
+                ]
+            ],
+            [
+                "[('Joseph Presti', 'Industry Leader, Property and Place \u2013 Australia', 'Melbourne VIC')]",
+                [
+                    "1. The query is looking for the name, job title, and business address of employees in the specific department denoted as 'SAVI Operations'.",
+                    "2. We're retrieving the name, job title, and business address of employees who belong to the department specified as 'SAVI Operations'.",
+                    "3. This is a query to fetch the names, job titles, and business addresses of employees working in the department labeled 'SAVI Operations'."
+                ]
+            ]
+        ]
+    ],
+    "Company": [
+        [
+            [
+                "[('the University of Melbourne',)]",
+                [
+                    "1) We are looking for the name from the list of companies, which matches exactly with 'the University of Melbourne'.",
+                    "2) Fetch the name from the company details where the given name is identical to 'the University of Melbourne'.",
+                    "3) Retrieve the name from the Company's dataset where we find a name that coincides with 'the University of Melbourne'."
+                ]
+            ],
+            [
+                "[('Lendlease',)]",
+                [
+                    "1) We are looking for the name from the list of companies, which matches exactly with 'Lendlease'.",
+                    "2) Fetch the name from the company details where the given name is identical to 'Lendlease'.",
+                    "3) Retrieve the name from the Company's dataset where we find a name that coincides with 'Lendlease'."
+                ]
+            ],
+            [
+                "[('Grocon',)]",
+                [
+                    "1) We are looking for the name from the list of companies, which matches exactly with 'Grocon'.",
+                    "2) Fetch the name from the company details where the given name is identical to 'Grocon'.",
+                    "3) Retrieve the name from the Company's dataset where we find a name that coincides with 'Grocon'."
+                ]
+            ],
+            [
+                "[('Department of Foreign Affairs and Trade (DFAT)',)]",
+                [
+                    "1) We are looking for the name from the list of companies, which matches exactly with 'Department of Foreign Affairs and Trade (DFAT)'.",
+                    "2) Fetch the name from the company details where the given name is identical to 'Department of Foreign Affairs and Trade (DFAT)'.",
+                    "3) Retrieve the name from the Company's dataset where we find a name that coincides with 'Department of Foreign Affairs and Trade (DFAT)'."
+                ]
+            ]
+        ],
+        [
+            [
+                "[(None,)]",
+                [
+                    "1. The command fetches the type of industry from a list of companies where there is a match for the company named 'the University of Melbourne'.",
+                    "2. In this instruction, the industry of a company is being requested, specifically for the company with the name 'the University of Melbourne'.",
+                    "3. The command seeks to find out what industry the company called 'the University of Melbourne' is in."
+                ]
+            ],
+            [
+                "[(None,)]",
+                [
+                    "1. The command fetches the type of industry from a list of companies where there is a match for the company named 'Lendlease'.",
+                    "2. In this instruction, the industry of a company is being requested, specifically for the company with the name 'Lendlease'.",
+                    "3. The command seeks to find out what industry the company called 'Lendlease' is in."
+                ]
+            ],
+            [
+                "[(None,)]",
+                [
+                    "1. The command fetches the type of industry from a list of companies where there is a match for the company named 'Grocon'.",
+                    "2. In this instruction, the industry of a company is being requested, specifically for the company with the name 'Grocon'.",
+                    "3. The command seeks to find out what industry the company called 'Grocon' is in."
+                ]
+            ],
+            [
+                "[(None,)]",
+                [
+                    "1. The command fetches the type of industry from a list of companies where there is a match for the company named 'Department of Foreign Affairs and Trade (DFAT)'.",
+                    "2. In this instruction, the industry of a company is being requested, specifically for the company with the name 'Department of Foreign Affairs and Trade (DFAT)'.",
+                    "3. The command seeks to find out what industry the company called 'Department of Foreign Affairs and Trade (DFAT)' is in."
+                ]
+            ]
+        ],
+        [
+            [
+                "[('the University of Melbourne', None)]",
+                [
+                    "1. Retrieve the name and the industry of a company whose name matches 'the University of Melbourne'.  ",
+                    "2. In this case, we're looking for the name and industry of a particular company that goes by 'the University of Melbourne'.  ",
+                    "3. Let's find out the name and the industry sector of the company named 'the University of Melbourne'."
+                ]
+            ],
+            [
+                "[('Lendlease', None)]",
+                [
+                    "1. Retrieve the name and the industry of a company whose name matches 'Lendlease'.  ",
+                    "2. In this case, we're looking for the name and industry of a particular company that goes by 'Lendlease'.  ",
+                    "3. Let's find out the name and the industry sector of the company named 'Lendlease'."
+                ]
+            ],
+            [
+                "[('Grocon', None)]",
+                [
+                    "1. Retrieve the name and the industry of a company whose name matches 'Grocon'.  ",
+                    "2. In this case, we're looking for the name and industry of a particular company that goes by 'Grocon'.  ",
+                    "3. Let's find out the name and the industry sector of the company named 'Grocon'."
+                ]
+            ],
+            [
+                "[('Department of Foreign Affairs and Trade (DFAT)', None)]",
+                [
+                    "1. Retrieve the name and the industry of a company whose name matches 'Department of Foreign Affairs and Trade (DFAT)'.  ",
+                    "2. In this case, we're looking for the name and industry of a particular company that goes by 'Department of Foreign Affairs and Trade (DFAT)'.  ",
+                    "3. Let's find out the name and the industry sector of the company named 'Department of Foreign Affairs and Trade (DFAT)'."
+                ]
+            ]
+        ],
+        [],
+        [],
+        []
+    ]
+}
